@@ -1,0 +1,40 @@
+import = [
+"~/.config/alacritty/keybindings.toml",
+"~/.config/alacritty/themes/themes/everforest_dark.toml"
+]
+
+shell = "/usr/bin/zsh"
+
+[font]
+
+normal.family = "MesloLGS Nerd Font"
+
+size = 11
+
+[window]
+
+dimensions.columns = 195
+dimensions.lines = 65
+
+padding.x = 5
+padding.y = 5
+
+decorations = "None"
+
+opacity = 0.65
+blur = true
+
+startup_mode = "Windowed"
+
+title = "Terminal"
+
+dynamic_title = false
+
+decorations_theme_variant = "Dark"
+
+[scrolling]
+history = 5000
+
+[cursor]
+style.shape = "Beam"
+style.blinking = "Off"
