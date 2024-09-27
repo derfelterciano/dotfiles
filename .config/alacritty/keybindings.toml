@@ -4,5 +4,6 @@ bindings = [
 {key = "V", mods = "Control", action = "Paste"},
 {key = "L", mods = "Control", command = "clear"},
 {key = "PageUp", mods = "Control|Shift", action = "IncreaseFontSize"},
-{key = "PageDown", mods = "Control|Shift", action = "DecreaseFontSize"}
+{key = "PageDown", mods = "Control|Shift", action = "DecreaseFontSize"},
+{key = "C", mods = "Control|Shift", chars = "\u0003"}
 ]
