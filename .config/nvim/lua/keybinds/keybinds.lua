@@ -90,3 +90,8 @@ vim.keymap.set(
 	"<Cmd>SymbolsOutline<CR>",
 	{ noremap = true, silent = true, desc = "Toggle Symbols-Outline" }
 )
+
+-- light buffer config
+vim.diagnostic.config({
+	update_in_insert = true,
+})
