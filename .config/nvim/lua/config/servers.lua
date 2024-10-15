@@ -5,5 +5,5 @@ return {
 	"html",
 	"pyright",
 	"marksman",
-	"bash-language-server",
+	"bashls",
 }
