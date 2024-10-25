@@ -2,7 +2,8 @@ require("config.lazy")
 require("keybinds.keybinds")
 
 -- theme
-vim.cmd.colorscheme("onedark")
+-- vim.cmd.colorscheme("onedark")
+vim.cmd.colorscheme("tokyonight")
 
 -- buffer settings
 vim.opt.tabstop = 4
