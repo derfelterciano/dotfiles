@@ -11,3 +11,4 @@ vim.opt.shiftwidth = 4
 vim.diagnostic.config({
 	update_in_insert = true,
 })
+vim.wo.relativenumber = true

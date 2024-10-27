@@ -16,6 +16,10 @@ return {
 					hide_gitignored = false,
 				},
 			},
+			close_if_last_window = true,
+			window = {
+				width = 25,
+			},
 		})
 	end,
 }
