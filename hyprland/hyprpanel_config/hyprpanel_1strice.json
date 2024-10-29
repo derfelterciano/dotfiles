@@ -1,0 +1,48 @@
+{
+  "bar.customModules.updates.pollingInterval": 1440000,
+  "theme.font.name": "MesloLGS Nerd Font",
+  "theme.font.weight": 500,
+  "terminal": "kitty",
+  "menus.transition": "crossfade",
+  "menus.transitionTime": 100,
+  "scalingPriority": "gdk",
+  "theme.bar.scaling": 85,
+  "theme.bar.floating": false,
+  "theme.bar.buttons.enableBorders": false,
+  "theme.bar.buttons.borderSize": "0.1em",
+  "theme.bar.buttons.y_margins": "0.4em",
+  "theme.bar.buttons.radius": "0.3em",
+  "theme.bar.buttons.dashboard.enableBorder": false,
+  "wallpaper.pywal": false,
+  "theme.bar.menus.opacity": 100,
+  "theme.font.size": "1.1rem",
+  "bar.customModules.ram.pollingInterval": 2000,
+  "bar.layouts": {
+    "1": {
+      "left": ["dashboard", "workspaces", "windowtitle"],
+      "middle": ["media"],
+      "right": ["volume", "clock", "notifications"]
+    },
+    "2": {
+      "left": ["dashboard", "workspaces", "windowtitle"],
+      "middle": ["media"],
+      "right": ["volume", "clock", "notifications"]
+    },
+    "*": {
+      "left": ["dashboard", "workspaces"],
+      "middle": ["windowtitle"],
+      "right": [
+        "network",
+        "cpu",
+        "ram",
+        "storage",
+        "volume",
+        "bluetooth",
+        "systray",
+        "clock",
+        "notifications"
+      ]
+    }
+  },
+  "theme.bar.transparent": true
+}
