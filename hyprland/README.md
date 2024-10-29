@@ -2,11 +2,11 @@
 
 ## Overall theme: tokyo-night
 
-Inspo from: [REPO](https://github.com/lokesh-krishna/dotfiles/blob/main/tokyo-night/readme.md)
+Inspo from: [lokesh-krishna](https://github.com/lokesh-krishna/dotfiles/blob/main/tokyo-night/readme.md)
 
-Another inspo: [REPO](https://github.com/plasmoduck/hypr-dots/tree/main/tokyonight)
+Another inspo: [plasmoduck](https://github.com/plasmoduck/hypr-dots/tree/main/tokyonight)
 
-- Status bar: **Waybar**
+- Status bar: **HyprPanel**
 - Program runner: **Rofi** ([Tokyonight config](https://github.com/w8ste/Tokyonight-rofi-theme/tree/main))
 - Wallpaper: **HyprPaper**
 - notification daemon: **mako**
@@ -15,13 +15,12 @@ Another inspo: [REPO](https://github.com/plasmoduck/hypr-dots/tree/main/tokyonig
   - hyprpolkitagent
   - hyprlock
 
-### TODO:
-
-- [x] Add hypridle
-- [ ] Figure out screen sharing and screen shotting
-- [x] switch to rofi
-- [x] switch to hyprpanel
-
 ## Another possible theme to use in the future: everforest
 
 Inspo from: [REPO](https://github.com/3rfaan/arch-everforest/tree/main)
+
+## Directory location:
+
+All Directories are located in the `$HOME/.config/`
+
+NOTE: the kitty directory requires kitty themes
