@@ -4,6 +4,7 @@ require("keybinds.keybinds")
 -- theme
 -- vim.cmd.colorscheme("onedark")
 vim.cmd.colorscheme("tokyonight")
+-- vim.cmd.colorscheme("rose-pine")
 
 -- buffer settings
 vim.opt.tabstop = 4
