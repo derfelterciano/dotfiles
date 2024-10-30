@@ -29,5 +29,6 @@ config.initial_rows = 60
 config.initial_cols = 200
 
 config.enable_kitty_graphics = true
+config.enable_wayland = false
 -- and finally, return the configuration to wezterm
 return config
