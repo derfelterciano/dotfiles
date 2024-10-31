@@ -17,6 +17,7 @@ return {
 				"html",
 				"rust",
 				"python",
+				"bash",
 			},
 			sync_install = false,
 			auto_instal = true,
