@@ -98,7 +98,6 @@ style = "bg:iris fg:overlay"
 disabled = false
 format = "[ 󰧱 $user ]($style)"
 show_always = true
-style = "bg:gold fg:overlay"
 style_root = "bg:gold fg:overlay"
 style_user = "bg:gold fg:overlay"
 
