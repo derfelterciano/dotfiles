@@ -1,6 +1,8 @@
 # Hyprland config
 
-## Overall theme: tokyo-night
+[Wallpapers](https://github.com/jorgeloopzz/Wallpapers)
+
+## Overall theme: ROSE-PINE
 
 Inspo from: [lokesh-krishna](https://github.com/lokesh-krishna/dotfiles/blob/main/tokyo-night/readme.md)
 
