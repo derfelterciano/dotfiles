@@ -6,4 +6,5 @@ return {
 	"pyright",
 	"marksman",
 	"bashls",
+	"jsonls",
 }
