@@ -9,6 +9,7 @@ return {
 		{ "hrsh7th/cmp-path" },
 		{ "saadparwaiz1/cmp_luasnip" },
 		{ "hrsh7th/cmp-nvim-lsp-signature-help" },
+		{ "SmiteshP/nvim-navic" },
 
 		-- snippets
 		{
@@ -24,6 +25,10 @@ return {
 
 	config = function()
 		local lsp_zero = require("lsp-zero")
+		local navic = require("nvim-navic")
+		navic.setup({
+			depth_limit = 20,
+		})
 
 		-- lsp_attach is where you enable features that only work
 		-- if there is a language server active in the file
@@ -54,7 +59,11 @@ return {
 		local servers = require("config.servers")
 		local lspconfig = require("lspconfig")
 		for _, lsp in ipairs(servers) do
-			lspconfig[lsp].setup({})
+			lspconfig[lsp].setup({
+				on_attach = function(client, bufnr)
+					navic.attach(client, bufnr)
+				end,
+			})
 		end
 
 		local cmp = require("cmp")
