@@ -14,3 +14,6 @@ vim.diagnostic.config({
 	update_in_insert = true,
 })
 vim.wo.relativenumber = true
+
+-- clipboard
+vim.opt.clipboard:append("unnamedplus")
