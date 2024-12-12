@@ -3,8 +3,8 @@ return {
 	"rust_analyzer",
 	"clangd",
 	"html",
-	"pyright",
 	"marksman",
 	"bashls",
 	"jsonls",
+	"pyright",
 }
