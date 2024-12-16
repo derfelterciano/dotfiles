@@ -14,6 +14,7 @@ vim.diagnostic.config({
 	update_in_insert = true,
 })
 vim.wo.relativenumber = true
+vim.opt.colorcolumn = "80,100"
 
 -- clipboard
 vim.opt.clipboard:append("unnamedplus")
