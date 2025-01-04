@@ -17,7 +17,7 @@ configuration {
     display-window:             "WINDOW";
 	drun-display-format:        "{name}";
 	window-format:              "{w} · {c} · {t}";
-	terminal: "kitty";
+	terminal: "ghostty";
 }
 
 /*****----- Global Properties -----*****/
