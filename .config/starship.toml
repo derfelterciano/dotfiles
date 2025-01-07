@@ -29,7 +29,7 @@ $directory \
 $git_branch\
 $git_status \
 $fill \
-$c $rust $conda $python \
+$c $rust $deno $conda $python\
 \n \
 [󱞪 ](fg:foam)
 """
@@ -180,4 +180,10 @@ style = "bg:overlay fg:foam"
 format = "[](fg:overlay)[$symbol$environment]($style)[](fg:overlay) "
 symbol = '  '
 ignore_base = false
+
+[deno]
+style = "bg:overlay fg:foam"
+format = "[](fg:overlay)[$symbol$version]($style)[](fg:overlay) "
+symbol = ' '
+
 
