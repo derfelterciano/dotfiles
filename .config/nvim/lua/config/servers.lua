@@ -7,4 +7,5 @@ return {
 	"bashls",
 	"jsonls",
 	"pyright",
+	"denols",
 }
