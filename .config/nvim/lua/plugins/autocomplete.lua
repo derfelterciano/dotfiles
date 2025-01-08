@@ -18,6 +18,8 @@ return {
 			version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
 			dependencies = { "rafamadriz/friendly-snippets" },
 			config = function()
+				require("luasnip").filetype_extend("javascriptreact", { "html", "css", "jsx" })
+				require("luasnip").filetype_extend("typescriptreact", { "html", "css", "tsx" })
 				require("luasnip.loaders.from_vscode").lazy_load()
 			end,
 		},

@@ -1,9 +1,9 @@
 return {
 	{
-    	"williamboman/mason.nvim",
+		"williamboman/mason.nvim",
 		config = function()
 			require("mason").setup()
-		end
+		end,
 	},
 	{
 		"williamboman/mason-lspconfig.nvim",
@@ -11,13 +11,17 @@ return {
 			local servers = require("config.servers")
 
 			require("mason-lspconfig").setup({
-				ensure_installed = servers
+				ensure_installed = servers,
 			})
-
-		end
-
+		end,
 	},
 	{
 		"neovim/nvim-lspconfig",
-	}
+	},
+	{
+		"windwp/nvim-ts-autotag",
+		config = function()
+			require("nvim-ts-autotag").setup()
+		end,
+	},
 }
