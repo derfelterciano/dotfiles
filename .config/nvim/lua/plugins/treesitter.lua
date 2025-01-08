@@ -20,7 +20,6 @@ return {
 				"bash",
 				"typescript",
 				"tsx",
-				"jsx",
 			},
 			sync_install = false,
 			auto_instal = true,
