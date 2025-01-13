@@ -14,4 +14,5 @@ return {
 	"typescript",
 	"tsx",
 	"svelte",
+	"css",
 }
