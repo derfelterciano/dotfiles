@@ -5,22 +5,7 @@ return {
 		local configs = require("nvim-treesitter.configs")
 
 		configs.setup({
-			ensure_installed = {
-				"c",
-				"lua",
-				"vim",
-				"vimdoc",
-				"query",
-				"elixir",
-				"heex",
-				"javascript",
-				"html",
-				"rust",
-				"python",
-				"bash",
-				"typescript",
-				"tsx",
-			},
+			ensure_installed = require("config.treesitter_languages"),
 			sync_install = false,
 			auto_instal = true,
 			highlight = { enable = true },

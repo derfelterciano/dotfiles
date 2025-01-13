@@ -1,0 +1,17 @@
+return {
+	"c",
+	"lua",
+	"vim",
+	"vimdoc",
+	"query",
+	"elixir",
+	"heex",
+	"javascript",
+	"html",
+	"rust",
+	"python",
+	"bash",
+	"typescript",
+	"tsx",
+	"svelte",
+}
