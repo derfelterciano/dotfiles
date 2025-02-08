@@ -4,7 +4,7 @@ return {
 	config = function()
 		require("lualine").setup({
 			options = {
-				theme = "OceanicNext",
+				theme = "ayu_mirage",
 			},
 			sections = {
 				lualine_c = {
