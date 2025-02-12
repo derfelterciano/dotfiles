@@ -11,34 +11,47 @@ vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Telescope help ta
 vim.keymap.set("n", "<leader>e", "<Cmd>Neotree toggle<CR>")
 vim.keymap.set("n", "<leader>f", "<Cmd>Neotree focus<CR>")
 
--- barbar
+-- BUFFERLINE (used to be barbar)
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
 -- Move to previous/next
-map("n", "<A-,>", "<Cmd>BufferPrevious<CR>", opts)
-map("n", "<A-.>", "<Cmd>BufferNext<CR>", opts)
+map("n", "<A-,>", "<Cmd>BufferLineCyclePrev<CR>", opts)
+map("n", "<A-.>", "<Cmd>BufferLineCycleNext<CR>", opts)
 -- Re-order to previous/next
-map("n", "<A-<>", "<Cmd>BufferMovePrevious<CR>", opts)
-map("n", "<A->>", "<Cmd>BufferMoveNext<CR>", opts)
+map("n", "<A-<>", "<Cmd>BufferLineMovePrev<CR>", opts)
+map("n", "<A->>", "<Cmd>BufferLineMoveNext<CR>", opts)
 -- Goto buffer in position...
-map("n", "<A-1>", "<Cmd>BufferGoto 1<CR>", opts)
-map("n", "<A-2>", "<Cmd>BufferGoto 2<CR>", opts)
-map("n", "<A-3>", "<Cmd>BufferGoto 3<CR>", opts)
-map("n", "<A-4>", "<Cmd>BufferGoto 4<CR>", opts)
-map("n", "<A-5>", "<Cmd>BufferGoto 5<CR>", opts)
-map("n", "<A-6>", "<Cmd>BufferGoto 6<CR>", opts)
-map("n", "<A-7>", "<Cmd>BufferGoto 7<CR>", opts)
-map("n", "<A-8>", "<Cmd>BufferGoto 8<CR>", opts)
-map("n", "<A-9>", "<Cmd>BufferGoto 9<CR>", opts)
-map("n", "<A-0>", "<Cmd>BufferLast<CR>", opts)
+map("n", "<A-1>", "<Cmd>lua require('bufferline').go_to(1, true)<CR>", opts)
+map("n", "<A-2>", "<Cmd>lua require('bufferline').go_to(2, true)<CR>", opts)
+map("n", "<A-3>", "<Cmd>lua require('bufferline').go_to(3, true)<CR>", opts)
+map("n", "<A-4>", "<Cmd>lua require('bufferline').go_to(4, true)<CR>", opts)
+map("n", "<A-5>", "<Cmd>lua require('bufferline').go_to(5, true)<CR>", opts)
+map("n", "<A-6>", "<Cmd>lua require('bufferline').go_to(6, true)<CR>", opts)
+map("n", "<A-7>", "<Cmd>lua require('bufferline').go_to(7, true)<CR>", opts)
+map("n", "<A-8>", "<Cmd>lua require('bufferline').go_to(8, true)<CR>", opts)
+map("n", "<A-9>", "<Cmd>lua require('bufferline').go_to(9, true)<CR>", opts)
+map("n", "<A-$>", "<Cmd>lua require('bufferline').go_to(-1, true)<CR>", opts)
+
+-- map("n", "<A-1>", "<Cmd>BufferLineGoToBuffer 1<CR>", opts)
+-- map("n", "<A-2>", "<Cmd>BufferLineGoToBuffer 2<CR>", opts)
+-- map("n", "<A-3>", "<Cmd>BufferLineGoToBuffer 3<CR>", opts)
+-- map("n", "<A-4>", "<Cmd>BufferLineGoToBuffer 4<CR>", opts)
+-- map("n", "<A-5>", "<Cmd>BufferLineGoToBuffer 5<CR>", opts)
+-- map("n", "<A-6>", "<Cmd>BufferLineGoToBuffer 6<CR>", opts)
+-- map("n", "<A-7>", "<Cmd>BufferLineGoToBuffer 7<CR>", opts)
+-- map("n", "<A-8>", "<Cmd>BufferLineGoToBuffer 8<CR>", opts)
+-- map("n", "<A-9>", "<Cmd>BufferLineGoToBuffer 9<CR>", opts)
+-- map("n", "<A-0>", "<Cmd>BufferLineGoToBuffer -1<CR>", opts)
 -- Pin/unpin buffer
 map("n", "<A-p>", "<Cmd>BufferPin<CR>", opts)
 -- Goto pinned/unpinned buffer
---                 :BufferGotoPinned
---                 :BufferGotoUnpinned
+--                 :BufferLineGoToBufferPinned
+--                 :BufferLineGoToBufferUnpinned
 -- Close buffer
-map("n", "<A-c>", "<Cmd>BufferClose<CR>", opts)
+-- map("n", "<A-c>", "<Cmd>BufferClose<CR>", opts)
+map("n", "<A-c>", "<Cmd>Neotree close<CR><Cmd>bdelete<CR>", opts)
+
 -- Wipeout buffer
 --                 :BufferWipeout
 -- Close commands

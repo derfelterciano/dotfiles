@@ -86,7 +86,13 @@ return {
 	{
 		"loctvl842/monokai-pro.nvim",
 		config = function()
-			require("monokai-pro").setup()
+			require("monokai-pro").setup({
+				filter = "spectrum",
+				day_night = {
+					enable = false,
+					day_filter = "spectrum",
+				},
+			})
 		end,
 	},
 }

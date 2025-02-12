@@ -48,7 +48,7 @@ font-family = "Hasklug Nerd Font"
 font-size = 12
 
 # THEME
-theme = "Monokai Pro"
+theme = "Monokai Pro Octagon"
 
 mouse-hide-while-typing = true
 
