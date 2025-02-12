@@ -50,7 +50,8 @@ map("n", "<A-p>", "<Cmd>BufferPin<CR>", opts)
 --                 :BufferLineGoToBufferUnpinned
 -- Close buffer
 -- map("n", "<A-c>", "<Cmd>BufferClose<CR>", opts)
-map("n", "<A-c>", "<Cmd>Neotree close<CR><Cmd>bdelete<CR>", opts)
+map("n", "<A-c>", "<Cmd>NvimTreeClose<CR><Cmd>bdelete<CR>", opts)
+-- map("n", "<A-c>", "<Cmd>bdelete<CR>", opts)
 
 -- Wipeout buffer
 --                 :BufferWipeout
@@ -72,6 +73,13 @@ map("n", "<Space>bw", "<Cmd>BufferOrderByWindowNumber<CR>", opts)
 -- Other:
 -- :BarbarEnable - enables barbar (enabled by default)
 -- :BarbarDisable - very bad command, should never be used
+
+-- Nvim-tree
+local map = vim.api.nvim_set_keymap
+local opts = { noremap = true, silent = true }
+
+map("n", "<leader>e", "<Cmd>NvimTreeToggle<CR>", opts)
+map("n", "<leader>f", "<Cmd>NvimTreeFocus<CR>", opts)
 
 -- toggle term
 vim.keymap.set("n", "<leader>tt", "<Cmd>ToggleTerm<CR>", { noremap = true, silent = true, desc = "Toggle terminal" })
