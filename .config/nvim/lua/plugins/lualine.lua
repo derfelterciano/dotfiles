@@ -4,7 +4,7 @@ return {
 	config = function()
 		require("lualine").setup({
 			options = {
-				theme = "moonfly",
+				theme = "everforest",
 				component_separators = "󰤃",
 				section_separators = { left = "", right = "" },
 			},

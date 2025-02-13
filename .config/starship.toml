@@ -34,16 +34,57 @@ $c $rust $deno $conda $python\
 [󱞪 ](fg:foam)
 """
 
-palette = "rose-pine"
+palette = "everforest"
 
-[palettes.rose-pine]
-overlay = '#26233a'
-love = '#eb6f92'
-gold = '#f6c177'
-rose = '#ebbcba'
-pine = '#31748f'
-foam = '#9ccfd8'
-iris = '#c4a7e7'
+[palettes.everforest]
+bg_dim = "#232a2e"
+bg0 = "#2d353b"
+bg1 = "#343f44"
+bg2 = "#3d484d"
+bg3 = "#475258"
+bg4 = "#4f585e"
+bg5 = "#56635f"
+bg_visual = "#543a48"
+bg_red = "#514045"
+bg_green = "#425047"
+bg_blue = "#3a515d"
+bg_yellow = "#4d4c43"
+
+fg = "#d3c6aa"
+red = "#e67e80"
+
+orange = "#e69875"
+yellow = "#dbbc7f"
+green = "#a7c080"
+aqua = "#83c092"
+blue = "#7fbbb3"
+purple = "#d699b6"
+grey0 = "#7a8478"
+grey1 = "#859289"
+grey2 = "#9da9a0"
+statusline1 = "#a7c080"
+statusline2 = "#d3c6aa"
+statusline3 = "#e67e80"
+
+overlay = "#2e383c"
+love = "#e67e80"
+gold = "#dbbc7f"
+rose = "#e67e80"
+pine = "#7fbbb3"
+foam = "#83c092"
+iris = "#d699b6"
+
+
+
+
+# [palettes.rose-pine]
+# overlay = '#26233a'
+# love = '#eb6f92'
+# gold = '#f6c177'
+# rose = '#ebbcba'
+# pine = '#31748f'
+# foam = '#9ccfd8'
+# iris = '#c4a7e7'
 
 [directory]
 format = "[](fg:iris bg:love)[ $path ]($style)[](fg:love)"
