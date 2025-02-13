@@ -1,0 +1,248 @@
+@define-color base #191724;
+@define-color surface #1f1d2e;
+@define-color overlay #26233a;
+@define-color muted #6e6a86;
+@define-color subtle #908caa;
+@define-color text #e0def4;
+@define-color love #eb6f92;
+@define-color gold #f6c177;
+@define-color rose #ebbcba;
+@define-color pine #31748f;
+@define-color foam #9ccfd8;
+@define-color iris #c4a7e7;
+@define-color highlight-low #21202e;
+@define-color highlight-med #403d52;
+@define-color highlight-high #524f67;
+
+/*Opacity colors*/
+@define-color base-opacity rgba(25, 23, 36, 0.85);
+@define-color surface-opacity rgba(31, 29, 46, 0.85);
+@define-color overlay-opacity rgba(38, 35, 58, 0.75);
+@define-color muted-opacity rgba(110, 106, 134, 0.85);
+@define-color subtle-opacity rgba(144, 140, 170, 0.85);
+@define-color text-opacity rgba(224, 222, 244, 0.85);
+@define-color love-opacity rgba(235, 111, 146, 0.85);
+@define-color gold-opacity rgba(246, 193, 119, 0.85);
+@define-color rose-opacity rgba(235, 188, 186, 0.85);
+@define-color pine-opacity rgba(49, 116, 143, 0.85);
+@define-color foam-opacity rgba(156, 207, 216, 0.85);
+@define-color iris-opacity rgba(196, 167, 231, 0.85);
+@define-color highlight-low-opacity rgba(33, 32, 46, 0.85);
+@define-color highlight-med-opacity rgba(64, 61, 82, 0.85);
+@define-color highlight-high-opacity rgba(82, 79, 103, 0.85);
+
+/* Global Settings */
+* {
+  font-family:
+    NotoMono Nerd Font,
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  min-height: 0;
+}
+
+/* Waybar Window Styling */
+window#waybar {
+  background: transparent;
+  color: @iris;
+  padding: 5px;
+
+  /* border: 2px solid @accent; */
+}
+
+.modules-right {
+  margin: 2px 0 0 5px;
+  background-color: @overlay-opacity;
+  border: 2px solid @subtle;
+  border-radius: 25px;
+  padding: 2px 15px;
+}
+
+.modules-center {
+  background-color: @overlay-opacity;
+  color: @text;
+  border: 2px solid @subtle;
+  border-radius: 25px;
+  padding: 2px 20px;
+}
+
+/* workspaces styling */
+#workspaces {
+  padding: 0 0px;
+  color: @rose;
+  background-color: @overlay-opacity;
+  /* Use box-shadow instead of border so the text isn't offset */
+  box-shadow: inset 0 3px transparent;
+  /* Avoid rounded borders under each workspace name */
+  border: 2px solid @subtle;
+  border-radius: 15px;
+}
+
+#workspaces button.focused {
+  background-color: transparent;
+}
+#workspace button.hover {
+  background-color: transparent;
+}
+#workspaces button.active {
+  color: @iris;
+  background-color: @highlight-high;
+  border-radius: 10px;
+  margin: 0px 10px;
+  padding: 0 25px;
+}
+
+#workspaces button.urgent {
+  color: #f7768e;
+}
+
+/* window */
+#window {
+  background-color: transparent;
+  margin: 0px 5px;
+  padding: 0px 10px 0px 0px;
+}
+
+/* cpu */
+#cpu {
+  background-color: @foam-opacity;
+  border: 1px solid @subtle;
+  border-radius: 10px;
+  color: @base;
+  margin-left: 2px;
+  margin-right: 5px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  padding: 0 10px;
+}
+
+/* memory */
+#memory {
+  background-color: @gold-opacity;
+  border: 1px solid @subtle;
+  border-radius: 10px;
+  color: @base;
+  margin: 2px 2px;
+  padding: 0 10px;
+}
+
+/* disk */
+#disk {
+  background-color: @love-opacity;
+  border: 1px solid @subtle;
+  border-radius: 10px;
+  color: @base;
+  margin: 2px 2px;
+  padding: 0 10px;
+}
+
+/* pulse */
+#pulseaudio {
+  background-color: @rose;
+  border: 1px solid @subtle;
+  border-radius: 10px;
+  color: @base;
+  margin: 2px 2px;
+  padding: 0 10px;
+}
+
+#pulseaudio.muted {
+  background-color: @muted-opacity;
+  color: @text;
+}
+
+/* network */
+#network {
+  background-color: @pine-opacity;
+  color: @base;
+  border: 1px solid @subtle;
+  border-radius: 10px;
+  margin: 2px 2px;
+  padding: 0 20px;
+}
+
+/* clock */
+#clock {
+  border: 1px solid @subtle;
+  border-radius: 10px;
+  margin: 2px 2px;
+  padding: 0 10px;
+}
+
+/*powerbutton*/
+
+#custom-powerS {
+  background-color: @love-opacity;
+  color: @base;
+  box-shadow: inset 0 3px transparent;
+  border: 2px solid @subtle;
+  border-radius: 10px;
+  margin: 0 2px;
+  padding: 0px 15px;
+}
+
+/*taskbar*/
+#taskbar {
+  background-color: @overlay-opacity;
+  color: @text;
+  border: 2px solid @subtle;
+  border-radius: 15px;
+  margin: 0 5px;
+  padding: 0 10px;
+}
+
+#taskbar button {
+  background-color: transparent;
+  margin: 0 5px;
+  padding: 0 10px;
+}
+
+#taskbar button.active {
+  background-color: @highlight-high;
+  padding: 0 25px;
+}
+
+#taskbar.empty {
+  background-color: transparent;
+  border: None;
+}
+
+/*sway notifications*/
+#custom-notification {
+  background-color: transparent;
+  color: @text;
+  box-shadow: inset 0 3px transparent;
+  border: 1px solid @subtle;
+  border-radius: 15px;
+  margin: 1px 5px;
+  padding-left: 10px;
+  padding-right: 5px;
+  padding-bottom: 1px;
+  padding-top: 1px;
+}
+
+/*tray*/
+#tray {
+  background-color: transparent;
+  border: 1px solid @subtle;
+  border-radius: 5px;
+  margin: 0px 2px;
+  padding: 0px 10px;
+}
+
+#tray.empty {
+  background-color: transparent;
+  border: None;
+}
+
+/*apps menu*/
+#custom-apps {
+  background-color: @rose-opacity;
+  color: @base;
+  border: 2px solid @subtle;
+  border-radius: 10px;
+  margin: 0px 5px;
+  padding: 1px 5px;
+}

@@ -22,13 +22,13 @@ configuration {
 
 /*****----- Global Properties -----*****/
 * {
-    font:                        "NotoMono Nerd Font 12";
-    background:                  #26233a;
-    background-alt:              #908caa;
-    foreground:                  #e0def4;
-    selected:                    #524f67;
-    active:                      #403d52;
-    urgent:                      #ebbcba;
+    font:                        "Hasklug Nerd Font 12";
+    background:                  #272e33;
+    background-alt:              #3c4841;
+    foreground:                  #7a8478;
+    selected:                    #d3c6aa;
+    active:                      #d699b6;
+    urgent:                      #dbbc7f;
 }
 
 /*****----- Main Window -----*****/
@@ -61,7 +61,7 @@ mainbox {
 imagebox {
     padding:                     20px;
     background-color:            transparent;
-    background-image:            url("/home/derfelt/Pictures/background/0016.jpg", height);
+    background-image:            url("/home/derfelt/git_repos/dotfiles/hyprland/wallpapers/background/polyscape_2.png", height);
     orientation:                 vertical;
     children:                    [ "inputbar", "dummy", "mode-switcher" ];
 }
