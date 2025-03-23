@@ -111,3 +111,9 @@ vim.keymap.set(
 	"<Cmd>SymbolsOutline<CR>",
 	{ noremap = true, silent = true, desc = "Toggle Symbols-Outline" }
 )
+
+-- Lazy
+local map = vim.api.nvim_set_keymap
+local opts = { noremap = true, silent = true }
+map("n", "<leader>Lu", "<Cmd>Lazy update<CR>", opts)
+map("n", "<leader>L", "<Cmd>Lazy<CR>", opts)
