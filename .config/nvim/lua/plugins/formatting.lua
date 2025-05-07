@@ -46,6 +46,9 @@ return {
 				--js, ts
 				null_ls.builtins.formatting.prettier,
 				-- null_ls.builtins.diagnostics.eslint_d,
+
+				-- c/c++
+				null_ls.builtins.formatting.clang_format,
 			},
 			on_attach = on_attach,
 		})
