@@ -2,6 +2,20 @@ return {
 	"nvim-tree/nvim-tree.lua",
 	dependencies = "nvim-tree/nvim-web-devicons",
 	config = function()
+		require("nvim-web-devicons").setup({
+			-- keep all the defaults…
+			default = true,
+			-- but override just the .tpp extension:
+			override = {
+				tpp = {
+					-- use the same icon and color as 'cpp'
+					icon = "", -- the C++ glyph
+					color = "#519aba", -- the usual C++ blue
+					name = "Tpp", -- a unique key
+				},
+			},
+		})
+
 		require("nvim-tree").setup({ -- BEGIN_DEFAULT_OPTS
 			renderer = {
 				icons = {
