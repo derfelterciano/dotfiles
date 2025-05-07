@@ -60,12 +60,20 @@ return {
 
 		local servers = require("config.servers")
 		local lspconfig = require("lspconfig")
+		local util = lspconfig.util
 		for _, lsp in ipairs(servers) do
-			lspconfig[lsp].setup({
+			local opts = {
 				on_attach = function(client, bufnr)
 					navic.attach(client, bufnr)
 				end,
-			})
+			}
+
+			if lsp == "clangd" then
+				opts.filetypes = { "c", "cpp", "objc", "objcpp", "h", "hpp", "ipp", "tpp" }
+				-- opts.root_dir = util.root_pattern("compile_commands.json", ".git", "compile_flags.txt")
+			end
+
+			lspconfig[lsp].setup(opts)
 		end
 
 		local cmp = require("cmp")

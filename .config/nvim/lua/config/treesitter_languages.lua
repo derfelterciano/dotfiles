@@ -15,4 +15,5 @@ return {
 	"tsx",
 	"svelte",
 	"css",
+	"cpp",
 }

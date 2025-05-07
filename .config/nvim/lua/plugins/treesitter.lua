@@ -3,7 +3,12 @@ return {
 	build = ":TSUpdate",
 	config = function()
 		local configs = require("nvim-treesitter.configs")
-
+		vim.filetype.add({
+			extension = {
+				tpp = "cpp",
+				ipp = "cpp",
+			},
+		})
 		configs.setup({
 			ensure_installed = require("config.treesitter_languages"),
 			sync_install = false,
