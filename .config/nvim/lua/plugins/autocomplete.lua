@@ -62,16 +62,6 @@ return {
 		local lspconfig = require("lspconfig")
 		local util = lspconfig.util
 		for lsp, server_opts in pairs(servers) do
-			-- local opts = {
-			-- 	on_attach = function(client, bufnr)
-			-- 		navic.attach(client, bufnr)
-			-- 	end,
-			-- }
-
-			-- if lsp == "clangd" then
-			-- 	opts.filetypes = { "c", "cpp", "objc", "objcpp", "h", "hpp", "ipp", "tpp" }
-			-- 	-- opts.root_dir = util.root_pattern("compile_commands.json", ".git", "compile_flags.txt")
-			-- end
 			local opts = vim.tbl_deep_extend("force", {
 				-- on_attach = lsp_attach,
 				on_attach = function(client, bufnr)
