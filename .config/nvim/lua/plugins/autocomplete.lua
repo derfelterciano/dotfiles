@@ -49,7 +49,7 @@ return {
 			vim.keymap.set("n", "<F4>", "<cmd>lua vim.lsp.buf.code_action()<cr>", opts)
 
 			-- inlay hints (like for rust)
-			vim.lsp.inlay_hint.enable(true, opts)
+			-- vim.lsp.inlay_hint.enable(true, opts)
 		end
 
 		lsp_zero.extend_lspconfig({
@@ -66,6 +66,7 @@ return {
 				-- on_attach = lsp_attach,
 				on_attach = function(client, bufnr)
 					navic.attach(client, bufnr)
+					vim.lsp.inlay_hint.enable(true, { bufnr = bufnr })
 				end,
 			}, server_opts)
 
