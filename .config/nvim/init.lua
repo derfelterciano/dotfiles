@@ -9,7 +9,8 @@ require("keybinds.keybinds")
 -- vim.cmd.colorscheme("gruvbox-material")
 -- vim.cmd.colorscheme("ayu-mirage")
 -- vim.cmd.colorscheme("monokai-pro")
-vim.cmd.colorscheme("everforest")
+vim.cmd.colorscheme("sonokai")
+-- vim.cmd.colorscheme("everforest")
 
 -- buffer settings
 vim.opt.tabstop = 4
