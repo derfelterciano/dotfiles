@@ -46,7 +46,7 @@ return {
 		completion = {
 			list = { selection = { preselect = false } },
 			ghost_text = { enabled = true },
-			documentation = { auto_show = false },
+			documentation = { auto_show = true },
 		},
 
 		sources = {
