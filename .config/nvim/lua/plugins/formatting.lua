@@ -11,8 +11,10 @@ return {
 	config = function()
 		require("mason-null-ls").setup({
 			ensure_installed = formatters,
-			automatic_install = true,
+			automatic_installation = true,
 		})
+
+		vim.g.rustfmt_autosave = 1
 
 		local null_ls = require("null-ls")
 		local on_attach = function(client, bufnr)
@@ -30,6 +32,7 @@ return {
 					vim.lsp.buf.format({ async = true })
 				end, opts)
 			end
+
 		end
 
 		null_ls.setup({
