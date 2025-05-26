@@ -32,7 +32,6 @@ return {
 					vim.lsp.buf.format({ async = true })
 				end, opts)
 			end
-
 		end
 
 		null_ls.setup({
@@ -52,6 +51,9 @@ return {
 
 				-- c/c++
 				null_ls.builtins.formatting.clang_format,
+
+				-- cmake
+				require("null-ls.builtins.diagnostics.cmake_lint"),
 			},
 			on_attach = on_attach,
 		})

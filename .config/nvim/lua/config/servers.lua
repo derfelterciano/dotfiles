@@ -20,4 +20,5 @@ return {
 	pyright = {},
 	denols = {},
 	svelte = {},
+	cmake = {},
 }
