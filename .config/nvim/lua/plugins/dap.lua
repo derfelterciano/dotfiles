@@ -1,10 +1,21 @@
 return {
 	"mfussenegger/nvim-dap",
-	dependencies = { "rcarriga/nvim-dap-ui", "nvim-neotest/nvim-nio", "folke/lazydev.nvim" },
+	dependencies = {
+		"rcarriga/nvim-dap-ui",
+		"nvim-neotest/nvim-nio",
+		"folke/lazydev.nvim",
+		"jay-babu/mason-nvim-dap.nvim",
+	},
 	config = function()
 		local dap = require("dap")
 		local dapui = require("dapui")
+		local mason_dap = require("mason-nvim-dap")
 		dapui.setup()
+
+		mason_dap.setup({
+			ensured_installed = { "codelldb" },
+			automatic_installation = true,
+		})
 
 		require("lazydev").setup({
 			library = { "nvim-dap-ui" },
