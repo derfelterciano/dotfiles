@@ -22,7 +22,7 @@ configuration {
 
 /*****----- Global Properties -----*****/
 * {
-    font:                        "Hasklug Nerd Font 12";
+    font:                        "Liga SFMono Nerd Font";
     background:                  #272e33;
     background-alt:              #3c4841;
     foreground:                  #7a8478;
