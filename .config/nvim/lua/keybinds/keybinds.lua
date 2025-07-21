@@ -25,7 +25,7 @@ map("n", "<A->>", "<Cmd>BufferLineMoveNext<CR>", opts)
 map("n", "<A-1>", "<Cmd>lua require('bufferline').go_to(1, true)<CR>", opts)
 map("n", "<A-2>", "<Cmd>lua require('bufferline').go_to(2, true)<CR>", opts)
 map("n", "<A-3>", "<Cmd>lua require('bufferline').go_to(3, true)<CR>", opts)
-map("n", "<A-4>", "<Cmd>lua require('bufferline').go_to(4, true)<CR>", opts)
+map("n", "<A-3>", "<Cmd>lua require('bufferline').go_to(4, true)<CR>", opts)
 map("n", "<A-5>", "<Cmd>lua require('bufferline').go_to(5, true)<CR>", opts)
 map("n", "<A-6>", "<Cmd>lua require('bufferline').go_to(6, true)<CR>", opts)
 map("n", "<A-7>", "<Cmd>lua require('bufferline').go_to(7, true)<CR>", opts)
@@ -117,3 +117,26 @@ local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 map("n", "<leader>Lu", "<Cmd>Lazy update<CR>", opts)
 map("n", "<leader>L", "<Cmd>Lazy<CR>", opts)
+
+-- Tmux like buffers (tmux shortcut commands)
+local map = vim.api.nvim_set_keymap
+local opts = { noremap = true, silent = true }
+
+-- ===== PANE/SPLIT CREATION =====
+map("n", "<C-a>%", "<Cmd>vsplit<CR>", opts) -- vertical split
+map("n", '<C-a>"', "<Cmd>split<CR>", opts) -- horizontal split
+
+-- ===== PANE NAVIGATION =====
+map("n", "<C-a><Left>", "<Cmd>wincmd h<CR>", opts) -- move left
+map("n", "<C-a><Down>", "<Cmd>wincmd j<CR>", opts) -- move down
+map("n", "<C-a><Up>", "<Cmd>wincmd k<CR>", opts) -- move up
+map("n", "<C-a><Right>", "<Cmd>wincmd l<CR>", opts) -- move right
+
+-- ===== PANE RESIZING =====
+map("n", "<C-a><C-Left>", "<Cmd>vertical resize -2<CR>", opts) -- decrease width
+map("n", "<C-a><C-Right>", "<Cmd>vertical resize +2<CR>", opts) -- increase width
+map("n", "<C-a><C-Up>", "<Cmd>resize -2<CR>", opts) -- decrease height
+map("n", "<C-a><C-Down>", "<Cmd>resize +2<CR>", opts) -- increase height
+
+-- ===== PANE MANAGEMENT =====
+map("n", "<C-a>x", "<Cmd>close<CR>", opts) -- close current pane
