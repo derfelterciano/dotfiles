@@ -53,7 +53,7 @@ return {
 				null_ls.builtins.formatting.clang_format,
 
 				-- cmake
-				require("null-ls.builtins.diagnostics.cmake_lint"),
+				-- require("none-ls.diagnostics.cmake_lint"),
 			},
 			on_attach = on_attach,
 		})

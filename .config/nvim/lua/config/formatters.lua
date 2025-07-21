@@ -5,6 +5,6 @@ return {
 	"prettier",
 	"flake8",
 	"clang-format",
-	"cmakelang",
+	"cmakelint",
 	--"eslint_d",
 }
