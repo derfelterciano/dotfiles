@@ -2,24 +2,53 @@
 
 [Wallpapers](https://github.com/jorgeloopzz/Wallpapers)
 
-## Overall theme: ROSE-PINE
+## Overall theme: Everforest
+
+---
+
+#### THIS IS OLD
 
 Inspo from: [lokesh-krishna](https://github.com/lokesh-krishna/dotfiles/blob/main/tokyo-night/readme.md)
 
 Another inspo: [plasmoduck](https://github.com/plasmoduck/hypr-dots/tree/main/tokyonight)
 
-- Status bar: **HyprPanel**
+---
+
+## Apps and programs installed
+
+- System info: **fastfetch**
+- Main terminal: **Kitty**
+- Status/top bar: **waybar**
 - Program runner: **Rofi** ([Tokyonight config](https://github.com/w8ste/Tokyonight-rofi-theme/tree/main))
 - Wallpaper: **HyprPaper**
-- notification daemon: **mako**
+- notification daemon: **swaync**
+- browser: **Firefox** or **Zen browser**
 - Other programs:
   - hyprsysteminfo
   - hyprpolkitagent
   - hyprlock
+  - xdg-desktop-portal-hyprland-git (screen sharing)
 
-## Another possible theme to use in the future: everforest
+### Important programs needed for coding and programming:
 
-Inspo from: [REPO](https://github.com/3rfaan/arch-everforest/tree/main)
+- Clang suite (clang, clangd, clang-format, etc.)
+- CMake
+- [Rust language](https://www.rust-lang.org/)
+- Deno
+- NPM
+- Node.js
+- NVM (node package manager) \[OPTIONAL just use AUR veersion\]
+- [Miniconda](https://www.anaconda.com/docs/getting-started/miniconda/main)
+- IDE: **NeoVim** OR **VSCode**
+  - C/C++ Debugger: codelldb
+- Git
+- RClone
+
+---
+
+## Everforest
+
+Everforest Inspo from: [REPO](https://github.com/3rfaan/arch-everforest/tree/main)
 
 ## Directory location:
 
