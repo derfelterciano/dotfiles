@@ -4,6 +4,8 @@
 
 ## Overall theme: Everforest
 
+## Font: Liga SFMono, Hasklug Nerd Font, Hack Nerd Font, etc.
+
 ---
 
 #### THIS IS OLD
@@ -23,11 +25,22 @@ Another inspo: [plasmoduck](https://github.com/plasmoduck/hypr-dots/tree/main/to
 - Wallpaper: **HyprPaper**
 - notification daemon: **swaync**
 - browser: **Firefox** or **Zen browser**
-- Other programs:
+- System-dependent programs:
   - hyprsysteminfo
   - hyprpolkitagent
   - hyprlock
+  - hypridle
   - xdg-desktop-portal-hyprland-git (screen sharing)
+  - wlogout
+- [Starship.rs](https://starship.rs/)
+- btop
+- cava
+- filezilla
+- htop
+- lazygit
+- libre office
+- yazi
+- yay
 
 ### Important programs needed for coding and programming:
 
@@ -43,6 +56,7 @@ Another inspo: [plasmoduck](https://github.com/plasmoduck/hypr-dots/tree/main/to
   - C/C++ Debugger: codelldb
 - Git
 - RClone
+- Tmux
 
 ---
 
